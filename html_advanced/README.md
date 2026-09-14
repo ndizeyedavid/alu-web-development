@@ -1,5 +1,9 @@
 # SmileSchool - Master the Art of Smiling
 
+<div align="center">
+  <img src="./hero.png" alt="SmileSchool Hero" width="100%" style="border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.15);" />
+</div>
+
 > "Life is short. Smile while you still have teeth." Some wise person, probably
 
 Welcome to **SmileSchool**, the most ridiculously over-engineered smile tutorial website this side of the internet. Why pay $10k for dental school when you can learn perfect smiles from the comfort of your own browser? We've got the vibe, the purple accents, and definitely the Source Sans Pro font to make your smiling dreams come true.
