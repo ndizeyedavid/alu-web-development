@@ -1,0 +1,445 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 35px;
+}
+
+header #logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 52px;
+}
+
+header nav a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #c271ff;
+  transition: width 0.4s ease;
+}
+
+header nav a:hover::before {
+  width: 100%;
+}
+
+main {
+  padding-top: 269px;
+  position: relative;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 98px;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(rgba(41, 48, 61, 0), rgba(7, 22, 41, 1)),
+    url("https://html-homework-assets.vercel.app/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+main h1 {
+  font-size: 70px;
+}
+main #hero-text {
+  display: flex;
+  align-items: center;
+  gap: 59px;
+}
+
+#hero-text span {
+  font-size: 16px;
+  font-weight: 700;
+  cursor: default;
+}
+
+button {
+  width: 170px;
+  height: 44px;
+  border-radius: 22px;
+  background: #c271ff;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(1.02);
+}
+main #lower-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 85px;
+  gap: 57px;
+}
+
+#lower-part h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 200;
+}
+#lower-part h3 span {
+  color: #c271ff;
+  font-weight: 700;
+}
+main #people {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+#people .person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#people .person img {
+  border-radius: 100%;
+}
+
+#people .person h5 {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#people .person i,
+#people .person h6 {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+#testimonial {
+  background: #c271ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 392px;
+  gap: 43px;
+}
+
+#testimonial img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#testimonial #quote {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#testimonial blockquote {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  width: 730px;
+  line-height: 38px;
+}
+
+#testimonial #author {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#testimonial #author i {
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+#video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 96px;
+  gap: 50px;
+  padding-bottom: 80px;
+}
+.title {
+  color: #071629;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+}
+.title span {
+  color: #c271ff;
+  font-weight: 700;
+}
+
+#video-section #videos {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+#videos .single-video {
+  width: 255px;
+  /* height: 335px; */
+  background: white;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 7.6px;
+  padding-bottom: 10px;
+  transition: 0.3s;
+}
+#videos .single-video:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.single-video .preview {
+  position: relative;
+}
+.single-video .preview .play-icon {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.single-video img {
+  width: 100%;
+  height: 184px;
+  object-fit: cover;
+}
+
+.single-video .contents {
+  display: flex;
+  flex-direction: column;
+  gap: 7.6px;
+  padding: 0 13px;
+}
+
+.single-video h3 {
+  color: #071629;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.single-video p {
+  color: rgba(7, 22, 41, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.single-video .author {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.single-video .author img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.single-video .author h4 {
+  color: #c271ff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.single-video .ratings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.single-video .ratings .stars {
+  background: url("https://html-homework-assets.vercel.app/rating.svg");
+  width: 107px;
+  height: 15px;
+}
+
+.single-video .ratings b {
+  color: #c271ff;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#membership-section {
+  background: #071629;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 392px; */
+  padding: 54px 0;
+  gap: 43px;
+}
+
+#membership-section .title {
+  color: #ffff;
+}
+
+#membership-section #memberships {
+  display: flex;
+  align-items: center;
+  gap: 67px;
+}
+#membership-section .membership-card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.membership-card h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.membership-card p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  width: 232px;
+}
+#membership-section button {
+  margin-top: 55px;
+}
+
+#faq-section {
+  padding: 54px 0;
+}
+#faq-section .title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+#faqs {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 74px;
+  padding: 74px 280px;
+}
+
+#faqs .faq-grid {
+  display: flex;
+  gap: 220px;
+}
+
+.faq-grid .single-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.single-faq h3 {
+  color: #071629;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.single-faq p {
+  color: rgba(7, 22, 41, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  background: #071629;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+footer div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer span {
+  color: rgba(255, 255, 255, 0.6);
+}
