@@ -446,6 +446,17 @@ footer span {
   color: rgba(255, 255, 255, 0.6);
 }
 
+footer a,
+.fries {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+  cursor: pointer;
+}
+footer a:hover,
+.fries:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 @media (max-width: 1024px) {
   header {
     justify-content: space-between;
