@@ -15,6 +15,7 @@ header {
   height: 50px;
   position: absolute;
   top: 35px;
+  z-index: 9999;
 }
 
 header #logo-container {
@@ -322,7 +323,7 @@ main #people {
 }
 
 .single-video .ratings .stars {
-  background: url("https://html-homework-assets.vercel.app/rating.svg");
+  background: url("/https://raw.githubusercontent.com/ndizeyedavid/html-homework-assets/main/rating.svg");
   width: 107px;
   height: 15px;
 }
@@ -421,6 +422,7 @@ main #people {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  text-align: justify;
 }
 
 footer {
@@ -442,4 +444,292 @@ footer div {
 
 footer span {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+    padding: 0 30px;
+    z-index: 9999;
+  }
+
+  main #people {
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #testimonial blockquote {
+    width: auto;
+    max-width: 500px;
+  }
+
+  #video-section #videos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  #membership-section #memberships {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  #faqs {
+    padding: 74px 60px;
+  }
+
+  #faqs .faq-grid {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
+
+  header nav {
+    gap: 28px;
+  }
+
+  main {
+    padding-top: 180px;
+    padding-bottom: 70px;
+    gap: 30px;
+  }
+
+  main h1 {
+    font-size: 50px;
+  }
+
+  main #hero-text {
+    gap: 35px;
+  }
+
+  main #lower-part {
+    margin-top: 50px;
+    gap: 40px;
+  }
+
+  #lower-part h3 {
+    font-size: 26px;
+  }
+
+  main #people {
+    gap: 40px;
+  }
+
+  #testimonial {
+    height: auto;
+    padding: 60px 30px;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #testimonial blockquote {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #testimonial #author {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  #video-section {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  #videos .single-video {
+    width: 280px;
+  }
+
+  #membership-section {
+    padding: 50px 0;
+  }
+
+  .membership-card p {
+    width: 240px;
+  }
+
+  #faq-section .title {
+    font-size: 42px;
+  }
+
+  #faqs {
+    padding: 50px 40px;
+    gap: 50px;
+  }
+
+  #faqs .faq-grid {
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  footer {
+    gap: 35px;
+    padding: 30px 0;
+  }
+
+  footer div {
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    top: 20px;
+    padding: 0 15px;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+  }
+
+  header nav {
+    gap: 18px;
+  }
+
+  header nav a {
+    font-size: 11px;
+  }
+
+  main {
+    padding-top: 140px;
+    padding-bottom: 50px;
+    gap: 22px;
+  }
+
+  main h1 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  main #hero-text {
+    gap: 20px;
+  }
+
+  #hero-text span {
+    font-size: 14px;
+  }
+
+  main #lower-part {
+    margin-top: 30px;
+    gap: 30px;
+  }
+
+  #lower-part h3 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  main #people {
+    gap: 30px;
+  }
+
+  #people .person img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+  }
+
+  #testimonial {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  #testimonial img {
+    width: 110px;
+    height: 110px;
+  }
+
+  #testimonial blockquote {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  #testimonial #author h3 {
+    font-size: 18px;
+  }
+
+  #testimonial #author i {
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 22px;
+    padding: 0 15px;
+  }
+
+  #video-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 35px;
+  }
+
+  #videos .single-video {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  #video-section #videos {
+    gap: 30px;
+  }
+
+  #membership-section {
+    padding: 40px 0;
+    gap: 35px;
+  }
+
+  #membership-section #memberships {
+    gap: 40px;
+  }
+
+  .membership-card p {
+    width: 260px;
+  }
+
+  #membership-section button {
+    margin-top: 20px;
+  }
+
+  #faq-section .title {
+    font-size: 30px;
+  }
+
+  #faqs {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .single-faq h3 {
+    font-size: 15px;
+  }
+
+  .single-faq p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  footer div {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  footer {
+    gap: 30px;
+    padding: 35px 0;
+  }
+
+  footer span {
+    font-size: 12px;
+  }
 }
